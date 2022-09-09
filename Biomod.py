@@ -223,7 +223,7 @@ class NumMod(loader.Module):
         if not args:
             return await utils.answer(
                 message,
-                f"-sU --- добавить|удалить юзеров(не больше 20), на которых будет триггериться фильтр(ид|реплай).\n"
+                f"-sU --- добавить|удалить юзеров(не больше 200), на которых будет триггериться фильтр(ид|реплай).\n"
                 f"[{', '.join([f'<code>{i}</code>' for i in filter_and_users['users']])}]\n"
                 f"-sF --- установить фильтр. допустим один.\n"
                 f"<code>{filter_and_users['filter'] or '❌не установлен.'}</code>\n"
