@@ -13,7 +13,7 @@ from datetime import datetime, date, time
 
 class NumMod(loader.Module):
     "Заражает по реплаю. Moded by @enicaaa по любым вопросам или желаниям так же @enicaaa"
-
+    strings = {'name': 'Biomod'}
 
     async def client_ready(self, client, db):
         self.db = db
