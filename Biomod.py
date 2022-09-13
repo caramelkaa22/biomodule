@@ -12,7 +12,7 @@ from datetime import datetime, date, time
 
 
 class NumMod(loader.Module):
-    "Заражает по реплаю. Moded by @enicaaa по любым вопросам или желаниям так же @enicaaa"
+    "Заражает по реплаю. Moded by @enicaaa , @Yahikoro . по любым вопросам или желаниям так же @enicaaa"
     strings = {'name': 'Biomod'}
 
     async def client_ready(self, client, db):
@@ -147,8 +147,7 @@ class NumMod(loader.Module):
         await message.edit(f'пользователь <code>{args}</code> добавлен.')
 
     async def zarlistcmd(self, message):
-        """ лист ваших заражений.\n.zarlist {@id/user} {count} {args}\nдля удаления: .zarlist {@id/user}\nаргументы:\n-k --
-        добавить букву k(тысяч) к числу.\n-f -- поиск по ид'у/юзеру.\n-r -- добавлению в список по реплаю. """
+        """ лист ваших заражений.\n.zarlist {@id/user} {count} {args}\nдля удаления: .zarlist {@id/user}\nаргументы:\n-k -- добавить букву k(тысяч) к числу.\n-f -- поиск по ид'у/юзеру.\n-r -- добавлению в список по реплаю. """
         args = utils.get_args_raw(message)
         infList = self.db.get("NumMod", "infList")
         timezone = "Europe/Kiev"
@@ -238,7 +237,7 @@ class NumMod(loader.Module):
                 f"<b>Прокачка навыков:</b>\n"
                 f"[фильтр] (навык) (0-5)\n"
                 f"например:[фильтр] квалификация 4 (улучшает квалификацию учённых на 4 ур.\n" 
-                f"или [фильтр] квалификация чек 4 (проверяет цену квалификации учённых на 4 ур.\n"     
+                f"или [фильтр] [чек] квалификация [чек] 4 (проверяет цену квалификации учённых на 4 ур.\n"     
                 f"доступные навыки:\n"
                 f"<code>патоген(паты)</code>|<code>квалификация(квала)</code>|<code>заразность(зз)</code>|<code>иммунитет(иммун)</code>|<code>летальность(летал)</code>|<code>безопасность(сб)</code>\n"
                 f"Игнор регистра!!"
